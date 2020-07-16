@@ -1,0 +1,133 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+#contact-box-wrapper {
+    margin: 50px auto;
+}
+
+.contact_box {
+    border: 2px solid #ebe8e8;
+    border-radius: 5px;
+    padding: 20px;
+    text-align: center;
+    font-size: 16px;
+    line-height: 24px;
+    color: #666666;
+}
+
+.contact_box_form {
+    display: flex;
+    flex-direction: column;
+    margin-top: 30px;
+}
+
+.contact_box_form_title {
+    font-size: 20px;
+}
+
+.contact_box_form_row {
+    padding: 15px;
+}
+
+.contact_box_form_row input {
+    width: 100%;
+    max-width: 100%;
+    padding: 10px;
+    box-sizing: border-box;
+    border-radius: 4px;
+    font-style: italic;
+    background-color: #f7f5f5;
+    border: none;
+    font-weight: bold;
+}
+
+.contact_box_form_row button {
+    display: inline-block;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    border: none;
+    position: relative;
+}
+
+.add_contact span::before {
+    content: '';
+    height: 40px;
+    width: 0px;
+    border-right: 2px solid green;
+    position: absolute;
+    top: 5px;
+    left: 24px;
+    box-sizing: border-box;
+}
+
+.add_contact span::after {
+    content: '';
+    height: 0px;
+    width: 40px;
+    border-top: 2px solid green;
+    position: absolute;
+    top: 24px;
+    left: 5px;
+    box-sizing: border-box;
+}
+
+.clear_contact img {
+    max-width: 100%;
+    max-height: 100%;
+}
+
+.contact_box_item_remove {
+    width: 50px;
+    height: 50px;
+    background-color: gray;
+}
+
+.contact_box_item {
+    text-align: left;
+    border-bottom: 2px solid #ccc;
+    margin-top: 10px;
+    position: relative;
+}
+
+.contact_box_item div:not(:last-child
+) {
+    padding-bottom: 5px;
+    padding-left: 40px;
+}
+
+.contact_box_item_email,
+.contact_box_item_name,
+.contact_box_item_phone{
+    background-repeat: no-repeat;
+    background-position: 0;
+    background-size: 25px;
+}
+.contact_box_item_name {
+    font-size: 18px;
+    font-weight: bold;
+    background-image: url('images/avatar.png');
+    background-size: 36px;
+    background-position-x: -5px;
+}
+
+.contact_box_item_email {
+    background-image: url('images/mail.png');
+}
+
+.contact_box_item_phone {
+    background-image: url('images/phone.png');
+}
+
+.contact_box_item_remove {
+    width: 50px;
+    height: 50px;
+    background-color: gray;
+    position: absolute;
+    right: 0;
+    top: 15px;
+    background-image: url('images/delete.jpg');
+    background-size: cover;
+}

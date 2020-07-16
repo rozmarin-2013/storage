@@ -1,0 +1,71 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+*:focus {
+    outline: none;
+}
+
+body {
+    font-size: 16px;
+}
+
+.container {
+    margin: 50px auto;
+    width: 50%;
+    text-align: center;
+}
+
+.nav_avatar,
+.nav_logout {
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.nav_avatar {
+    background-image: url("../images/empty-avatar.jpg");
+    width: 60px;
+    height: 60px;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    margin-right: 20px;
+}
+
+.auth_form_field {
+    padding: 15px;
+}
+
+.auth_form input {
+    width: 100%;
+    padding: 10px;
+    background-color: #f7f5f5;
+    border: 1px solid #696969;
+    box-sizing: border-box;
+    border-radius: 2px;
+}
+
+.auth_form input:focus {
+    border: 2px solid #30d935ff;
+}
+
+.auth_form button, .logout {
+    border: none;
+    padding: 15px;
+    width: 140px;
+    background-color: #30d935ff;
+    color: white;
+    border-radius: 2px;
+    font-weight: bold;
+    font-size: 18px;
+}
+
+.auth_form button:hover {
+    background-color: #2e9e32ff;
+    border-radius: 2px;
+}
+
+
+.logout {
+    background-color: #e32209;
+}
